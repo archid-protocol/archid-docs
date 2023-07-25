@@ -9,3 +9,8 @@
   height: 200px;
   width: 200px;
 }
+
+.titleLink, .titleLink:hover, .titleLink:active {
+  color: var(--ifm-color-primary-darkest);
+  text-decoration-color: var(--ifm-color-primary-darkest);
+}

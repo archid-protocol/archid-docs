@@ -1,54 +1,60 @@
 import React from 'react';
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: JSX.Element;
+  link: string;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Learn the Basics',
+    Svg: require('@site/static/img/archprint.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        ArchID is a web3 domain name system built for Archway Network. Learn more about ArchID, your journey begins here.
       </>
     ),
+    link: '/docs/start',
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Contract Developers',
+    Svg: require('@site/static/img/token.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Smart contract developers can integrate ArchID to register and manage domains from their CosmWasm smart contracts.
       </>
     ),
+    link: '/docs/contracts/intro',
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Dapp Developers',
+    Svg: require('@site/static/img/token-update.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Dapp developers can call the ArchID Registry contract directly. Learn how to execute and query the Registry from your dapp.
       </>
     ),
+    link: '/docs/dapps/intro',
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, Svg, description, link}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
+      <Link to={link}>
+        <div className="text--center">
+          <Svg className={styles.featureSvg} role="img" />
+        </div>
+      </Link>
       <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
+        <Link to={link} className={clsx('title-link', styles.titleLink)}>
+          <h3 className={clsx('title-link', styles.titleLink)}>{title}</h3>
+        </Link>
         <p>{description}</p>
       </div>
     </div>

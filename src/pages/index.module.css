@@ -8,16 +8,54 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  padding: 4em;
+  padding-bottom: 1.5em;
+  background-image: url(/img/archprint.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 37px;
+  color: #fff;
+  height: 500px;
+  margin-bottom: 2em;
+  text-align: left;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 76px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.yourName {
+  background-image: linear-gradient(90deg,#fff,transparent);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+  opacity: .7;
+}
+
+.subtitle {
+  max-width: 655px;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.subtitleText {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  align-items: center;
+  letter-spacing: -.01em;
+  margin-top: 1em;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
   }
-}
-
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
