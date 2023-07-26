@@ -8,7 +8,7 @@ title: Introduction
 
 Read on to learn how you can integrate the following [ArchID](https://archid.app) features in your [CosmWasm](https://cosmwasm.com) smart contracts running on [Archway Network](https://archway.io).
 
-- [Name registration and domain minting](/docs/contracts/cw-registration)
+- [Registering and minting domains](/docs/contracts/cw-registration)
 - [Name resolution and resolving domain data](/docs/contracts/cw-resolution)
 
 
