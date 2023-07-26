@@ -31,7 +31,7 @@ When querying `ResolveRecord` there several rules that must be followed. These r
 There will always be one `.` character, because of the `.arch` suffix. A second `.` character will only be present if you are resolving a subdomain record.
 :::
 
-## Resolve A Record
+## Resolve a Domain Record
 
 When querying `ResolveRecord`, there are three cases that would cause an error response.
 
