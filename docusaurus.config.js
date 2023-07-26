@@ -137,9 +137,12 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} ArchID.`,
       },
+      // prism: {
+      //   theme: lightCodeTheme,
+      //   darkTheme: darkCodeTheme,
+      // },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: require('prism-react-renderer/themes/dracula'),
       },
     }),
 };
