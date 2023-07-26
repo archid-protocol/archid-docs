@@ -59,22 +59,19 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
             position: 'left',
             label: 'Getting Started',
-            docId: 'start',
+            to: '/docs/start',
           },
           {
-            type: 'doc',
             position: 'left',
             label: 'Contracts',
-            docId: 'contracts/intro',
+            to: '/docs/contracts/intro',
           },
           {
-            type: 'doc',
             position: 'left',
             label: 'Dapps',
-            docId: 'dapps/intro',
+            to: '/docs/dapps/intro',
           },
           {
             href: 'https://github.com/archid-protocol',
