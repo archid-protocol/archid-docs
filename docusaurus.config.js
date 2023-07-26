@@ -60,7 +60,7 @@ const config = {
         items: [
           {
             position: 'left',
-            label: 'Getting Started',
+            label: 'Overview',
             to: '/docs/start',
           },
           {

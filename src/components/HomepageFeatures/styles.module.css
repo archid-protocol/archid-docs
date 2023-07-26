@@ -14,3 +14,8 @@
   color: var(--ifm-color-primary-darkest);
   text-decoration-color: var(--ifm-color-primary-darkest);
 }
+
+.bodyLink, .bodyLink:hover, .bodyLink:active {
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+}

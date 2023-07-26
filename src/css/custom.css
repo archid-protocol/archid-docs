@@ -44,3 +44,33 @@ html, body {
 .menu__list-item-collapsible {
   text-transform: capitalize;
 }
+
+[data="center"] {
+  margin: auto;
+  text-align: center;
+  display: block;
+}
+
+[data="pad-center"] {
+  margin: auto;
+  text-align: center;
+  display: block;
+  padding: 2em;
+}
+
+[data="pad"] {
+  padding: 2em;
+}
+
+[data="pad-vertical"] {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+[data="pad-top"] {
+  padding-top: 2em;
+}
+
+[data="pad-bottom"] {
+  padding-bottom: 2em;
+}

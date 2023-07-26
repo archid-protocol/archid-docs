@@ -16,7 +16,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/archprint.svg').default,
     description: (
       <>
-        ArchID is a web3 domain name system built for Archway Network. Learn more about ArchID, your journey begins here.
+        To learn more about ArchID, your journey begins here
       </>
     ),
     link: '/docs/start',
@@ -26,7 +26,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/token.svg').default,
     description: (
       <>
-        Smart contract developers can integrate ArchID to register and manage domains from their CosmWasm smart contracts.
+        Register and manage domains from your CosmWasm smart contracts
       </>
     ),
     link: '/docs/contracts/intro',
@@ -36,7 +36,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/token-update.svg').default,
     description: (
       <>
-        Dapp developers can call the ArchID Registry contract directly. Learn how to execute and query the Registry from your dapp.
+        Execute and query the ArchID Registry from your dapps
       </>
     ),
     link: '/docs/dapps/intro',
@@ -55,7 +55,9 @@ function Feature({title, Svg, description, link}: FeatureItem) {
         <Link to={link} className={clsx('title-link', styles.titleLink)}>
           <h3 className={clsx('title-link', styles.titleLink)}>{title}</h3>
         </Link>
-        <p>{description}</p>
+        <Link to={link} className={clsx('body-link', styles.bodyLink)}>
+          <p>{description}</p>
+        </Link>
       </div>
     </div>
   );

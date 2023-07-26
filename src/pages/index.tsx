@@ -16,7 +16,7 @@ function HomepageHeader() {
         <h1 className="ln-2">This is who you are</h1>
         <h1 className="ln-3">in Archway</h1>
         <div className={clsx('subtitle', styles.subtitle)}>
-          <p className={clsx('subtitle-text', styles.subtitleText)}>A social security number is how official sources identify you, but not how you introduce yourself. You do that with your name. Start using your ArchID instead of an unmemorable string to identify yourself in Archway.</p>
+          <p className={clsx('subtitle-text', styles.subtitleText)}>ArchID needs your help with building the metaverse! Read these docs to encounter secret knowledge for building ArchID support in your applications. By building together we can unite the Cosmos.</p>
         </div>
       </div>
     </header>
