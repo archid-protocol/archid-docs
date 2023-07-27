@@ -34,7 +34,7 @@ Here's an example of how we might call the `Config` entry point and determine th
 use cosmwasm_std::{
     Deps, Env, to_binary, QueryRequest, Response, WasmQuery,
 };
-use crate::msg::SomeQueryMsg; // Your custom msg type
+use crate::msg::SomeQueryMsg; // Your msg type
 use crate::archid_registry;
 
 pub fn some_query_fn(
@@ -72,7 +72,7 @@ use cosmwasm_std::{
     Coin, CosmosMsg, DepsMut, Env, MessageInfo, to_binary,
     Response, Uint128, WasmMsg,
 };
-use crate::msg::SomeExecuteMsg; // Your custom msg type
+use crate::msg::SomeExecuteMsg; // Your msg type
 
 use archid_registry::{
   ExecuteMsg as ArchIdExecuteMsg,

@@ -31,7 +31,7 @@ When querying `ResolveRecord` there several rules that must be followed. These r
 There will always be one `.` character, because of the `.arch` suffix. A second `.` character will only be present if you are resolving a subdomain record.
 :::
 
-## Resolve a Domain Record
+## Resolving a Domain Record
 
 When querying `ResolveRecord`, there are three cases that would cause an error response.
 
@@ -45,7 +45,7 @@ Here's an example of how we might call the `ResolveRecord` entry point.
 use cosmwasm_std::{
     Deps, Env, to_binary, QueryRequest, Response, WasmQuery,
 };
-use crate::msg::SomeQueryMsg; // Your custom msg type
+use crate::msg::SomeQueryMsg; // Your msg type
 use crate::archid_registry;
 
 pub fn some_query_fn(
@@ -84,8 +84,8 @@ For a valid domain, here's what the response for `ResolveRecord` looks like.
 
 ```json
 { 
-  address: "archway1h3mqe7elgk0ndjc5yfw8kv92m449y4e3k84pa2",
-  expiration: 1693037996
+  address: "archway1n7d4c52knwqqkw9j975ranknkp4fn3we0unrp6",
+  expiration: 1751466900
 }
 ```
 
@@ -95,15 +95,17 @@ The `expiration` returned by `ResolveRecord` is a [Unix Timestamp](https://en.wi
 Note that querying `ResolveRecord` for an expired domain will return an error.
 :::
 
-## Resolve Domain Data
+## Resolving a Domain's Data
 
-Resolve detailed domain data using the usual metadata query for `cw721` tokens (`NftInfo`), using the ArchID  Cw721 address. Here's an example of how we might call the `NftInfo` entry point.
+Resolve detailed domain data with the usual metadata query for `cw721` tokens (`NftInfo`) using ArchID's  [cw721 address](/docs/contracts/intro#smart-contract-addresses) and the domain (`token_id`) to request data for. 
+
+Here's an example of how we might call the `NftInfo` entry point.
 
 ```js
 use cosmwasm_std::{
     Deps, Env, to_binary, QueryRequest, Response, WasmQuery,
 };
-use crate::msg::SomeQueryMsg; // Your custom msg type
+use crate::msg::SomeQueryMsg; // Your msg type
 
 use archid_token::{Extension, Metadata, QueryMsg as Cw721QueryMsg};
 use cw721_updatable::{NftInfoResponse};
