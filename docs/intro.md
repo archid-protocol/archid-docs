@@ -66,4 +66,12 @@ After performing the above steps, users looking up, either your contract address
 
 You can also update any information if it becomes invalid. For example, in the extreme case of an account compromise. If you Archway private key is secure, you can update or remove any compromised accounts that were previously associated to your domain.
 
+### CosmWasm Integrations
+
+For integrating ArchID support in your smart contracts see the [Contract Developer Docs](./contracts/intro).
+
+### Web App Integrations
+
+For integration ArchID support in your apps and websites see the [Dapp Developer Docs](./dapps/intro).
+
 <img data="pad-center" alt="ArchID" src="/img/token.svg" />
