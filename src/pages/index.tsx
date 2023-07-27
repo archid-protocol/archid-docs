@@ -16,7 +16,7 @@ function HomepageHeader() {
         <h1 className="ln-2">This is who you are</h1>
         <h1 className="ln-3">in Archway</h1>
         <div className={clsx('subtitle', styles.subtitle)}>
-          <p className={clsx('subtitle-text', styles.subtitleText)}>ArchID needs your help with building the metaverse! Read these docs and learn secret knowledge for building ArchID support in your applications. Building together we can unite the Cosmos.</p>
+          <p className={clsx('subtitle-text', styles.subtitleText)}>ArchID needs your help with building the metaverse! Read these docs to learn secret knowledge for building ArchID support in your applications. Building together we can unite the Cosmos.</p>
         </div>
       </div>
     </header>

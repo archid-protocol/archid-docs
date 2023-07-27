@@ -16,7 +16,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/archprint.svg').default,
     description: (
       <>
-        To learn more about ArchID, your journey begins here
+        Learn more about ArchID, your journey begins here
       </>
     ),
     link: '/docs/start',
