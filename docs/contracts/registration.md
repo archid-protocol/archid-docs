@@ -10,11 +10,13 @@ For more information about `ResolveRecord`, and name resolution in general, see 
 
 ## Calculating Registration Cost
 
-Before registering the domain, it will also be important to calculate the registration cost. This amount will also dictate the length of the domain lifetime. 
+Before registering the domain, it will also be important to calculate the registration cost. This amount will dictate the length of the domain lifetime. 
 
-Registration cost is based on the base per year price of registration. Since `base_cost` and `base_expiration` are configurable values of the ArchID Registry, they are liable to change. So it would be better to get the current price and expiry parameters, and not hard code them into your contract.
+Registration cost is based on the per year price (`base_cost`) of the registration. Since `base_cost` and `base_expiration` are configurable values of the ArchID Registry, it would be better to get the current price and expiry parameters from the blockchain and not hard code them into your contract.
 
-For convenience, we call the `base_expiration` amount "years", because on mainnet `base_expiration` is configured to be a duration of 1 year (denominated in seconds). Domains can be registered for 1, 2 or 3 years. Paying an amount equal to, or more than, 3x the `base_cost` will result in a registration of 3 years. Paying less than 1x the `base_cost` will cause the transaction to fail. The value of `base_cost` is denominated in `aarch` on mainnet and `aconst` on testnet.
+For convenience, we call the `base_expiration` amount "years", because on mainnet `base_expiration` is configured to be a duration of 1 year (denominated in seconds). Domains can be registered for 1, 2 or 3 years. Paying an amount equal to, or more than, 3x the `base_cost` will result in a registration of 3 years. Paying less than 1x the `base_cost` will result in a failing transaction. 
+
+The value of `base_cost` is denominated in `aarch` on mainnet and `aconst` on testnet.
 
 We can get the `base_cost` and `base_expiration` by querying the `Config` entry point of the Registry contract. It doesn't take any arguments as parameters.
 
@@ -28,7 +30,7 @@ pub enum QueryMsg {
 }
 ```
 
-Here's an example of how we might call the `Config` entry point and determine the real-time cost of per year domain registration.
+Here's an example of how we might call the `Config` entry point and determine the real-time cost of domain registration per year.
 
 ```js 
 use cosmwasm_std::{
