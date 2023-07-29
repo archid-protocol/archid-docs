@@ -19,7 +19,7 @@ const FeatureList: FeatureItem[] = [
         Learn more about ArchID, your journey begins here
       </>
     ),
-    link: '/docs/start',
+    link: '/docs/intro',
   },
   {
     title: 'Contract Developers',
