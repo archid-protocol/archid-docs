@@ -20,7 +20,7 @@ pub enum QueryMsg {
 
 :::info Format Rules
 
-When querying `ResolveRecord` there several rules that must be followed. These rules also define what is a valid domain name in the ArchID domain system.
+When querying `ResolveRecord` there several rules that must be followed. These rules also define the format of what is a valid domain name in the ArchID domain system.
 
 1. `name` must end with `.arch`
 2. `name` must not contain invalid domain characters; acceptable characters are: `a-z` (alphabetic), `0-9`(numeric), `.` (periods), `_` (underscores) and `-` (hyphens)
@@ -83,9 +83,9 @@ pub fn some_query_fn(
 For a valid domain, here's what the response for `ResolveRecord` looks like.
 
 ```json
-{ 
-  address: "archway1n7d4c52knwqqkw9j975ranknkp4fn3we0unrp6",
-  expiration: 1751466900
+{
+  "address": "archway1n7d4c52knwqqkw9j975ranknkp4fn3we0unrp6",
+  "expiration": 1751466919
 }
 ```
 

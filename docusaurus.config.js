@@ -61,7 +61,7 @@ const config = {
           {
             position: 'left',
             label: 'Overview',
-            to: '/docs/start',
+            to: '/docs/intro',
           },
           {
             position: 'left',
@@ -116,7 +116,7 @@ const config = {
                 href: 'https://discord.gg/ghCCDu3dPB',
               },
               {
-                label: 'X',
+                label: 'X (Twitter)',
                 href: 'https://twitter.com/archidapp',
               },
             ],
