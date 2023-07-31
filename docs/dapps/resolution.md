@@ -32,8 +32,6 @@ When querying `ResolveRecord`, there are three cases that would cause an error r
 Here's an example of how we might call the `ResolveRecord` entry point.
 
 ```js
-const REGISTRY_CONTRACT = "archway1275jwjpktae4y4y0cdq274a2m0jnpekhttnfuljm6n59wnpyd62qppqxq0";
-
 async function resolveRecord(name = null) {
   if (!name) return;
   let client = await getClient();
@@ -91,8 +89,6 @@ Resolve detailed domain data with the usual metadata query for `cw721` tokens (`
 Here's an example of how we might call the `NftInfo` entry point.
 
 ```js
-const CW721_CONTRACT = "archway1cf5rq0amcl5m2flqrtl4gw2mdl3zdec9vlp5hfa9hgxlwnmrlazsdycu4l";
-
 async function tokenMetadata (tokenId = null) {
   if (!tokenId) return;
   let client = await getClient();

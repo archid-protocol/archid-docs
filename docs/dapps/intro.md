@@ -43,6 +43,12 @@ Here's an example of getting an [arch3.js](https://www.npmjs.com/package/@archwa
 
 ```js
 const Arch3 = require('@archwayhq/arch3.js');
+const Stargate = require('@cosmjs/stargate')
+
+const coin = Stargate.coin;
+
+const REGISTRY_CONTRACT = "archway1275jwjpktae4y4y0cdq274a2m0jnpekhttnfuljm6n59wnpyd62qppqxq0";
+const CW721_CONTRACT = "archway1cf5rq0amcl5m2flqrtl4gw2mdl3zdec9vlp5hfa9hgxlwnmrlazsdycu4l";
 
 const Blockchain = {
   chainId: "archway-1",

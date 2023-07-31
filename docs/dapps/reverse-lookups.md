@@ -13,8 +13,6 @@ Reverse lookups are handled by the `ResolveAddress` query entry point. `ResolveA
 Here's an example of how we might query the `ResolveAddress` entry point.
 
 ```js
-const REGISTRY_CONTRACT = "archway1275jwjpktae4y4y0cdq274a2m0jnpekhttnfuljm6n59wnpyd62qppqxq0";
-
 async function resolveAddress(address = null) {
   if (!address) return;
   let client = await getClient();

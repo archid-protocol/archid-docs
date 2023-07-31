@@ -22,8 +22,6 @@ We can get the `base_cost` by querying the `Config` entry point of the Registry 
 Here's an example of how we might call the `Config` entry point and determine the real-time cost of domain registration per year.
 
 ```js
-const REGISTRY_CONTRACT = "archway1275jwjpktae4y4y0cdq274a2m0jnpekhttnfuljm6n59wnpyd62qppqxq0";
-
 async function config() {
   let client = await getClient();
   try {
@@ -63,8 +61,6 @@ To register a new domain, execute a transaction to the `Register` entry point of
 Here's an example of how to execute the `Register` entry point to mint a new domain name.
 
 ```js
-const REGISTRY_CONTRACT = "archway1275jwjpktae4y4y0cdq274a2m0jnpekhttnfuljm6n59wnpyd62qppqxq0";
-
 async function registerDomain() {
   // CW Client
   let client = await getClient();
@@ -73,7 +69,7 @@ async function registerDomain() {
   // Cost
   let cost = registrationCost(2); // 2 year registration
   // Convert cost to aarch (mainnet) or aconst (testnet)
-  let funds = [coin(String(cost), client.chainInfo.currencies[0].coinMinimalDenom)];
+  let funds = [coin(String(cost), "aarch")];
 
   // Register a domain
   try {
@@ -126,8 +122,6 @@ Unlike top-level domains, minting subdomains does not cost a per year registrati
 Here's an example of how to execute the `RegisterSubdomain` entry point to mint a new subdomain.
 
 ```js
-const REGISTRY_CONTRACT = "archway1275jwjpktae4y4y0cdq274a2m0jnpekhttnfuljm6n59wnpyd62qppqxq0";
-
 async function registerSubdomain() {
   // CW Client
   let client = await getClient();
@@ -154,11 +148,11 @@ async function registerSubdomain() {
       }
     };
     // Broadcast tx
-    let tx = await client.wasmClient.execute(
+    let tx = await client.execute(
       accounts[0].address,
       REGISTRY_CONTRACT,
       entrypoint,
-      client.fees,
+      "auto",
       "Registering subdomain"
     );
     // Tx result
