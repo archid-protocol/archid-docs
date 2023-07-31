@@ -136,7 +136,7 @@ async function renewRegistration(name = null, years = null) {
 
 async function doRenewal() {
   // highlight-start
-  // Do not add the `.arch` suffix when renewing a domain 
+  // Do not add the `.arch` suffix
   let domain = "archid"; 
   // highlight-end
   let years = 1;
