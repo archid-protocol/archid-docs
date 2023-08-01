@@ -74,3 +74,9 @@ html, body {
 [data="pad-bottom"] {
   padding-bottom: 2em;
 }
+
+@media (max-width: 576px) {
+  .markdown h1:first-child {
+      font-size: 3rem;
+  }
+}
