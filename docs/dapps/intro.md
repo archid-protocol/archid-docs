@@ -37,7 +37,7 @@ See below for the smart contract addresses of the [ArchID](https://archid.app) R
 
 ## JavaScript Client
 
-The following docs reference a `client` JavaScript object. Assume you are working with an [arch3.js](https://www.npmjs.com/package/@archwayhq/arch3.js) client object.
+The following docs reference a `client` JavaScript object, and string addresses for `REGISTRY_CONTRACT` and `CW721_CONTRACT`. Assume you are working with an [arch3.js](https://www.npmjs.com/package/@archwayhq/arch3.js) client object.
 
 Here's an example of getting an [arch3.js](https://www.npmjs.com/package/@archwayhq/arch3.js) client.
 
@@ -73,11 +73,12 @@ async function getClient() {
 async function getAccounts() {
   const signer = await window.getOfflineSignerAuto(Blockchain.chainId);
   const accounts = signer.getAccounts();
+  return accounts;
 }
 ```
 
 
-## Compatibiilty
+## Compatibility
 
 The following docs assume you are integrating [ArchID](https://archid.app) into a web application using [JavaScript](https://en.wikipedia.org/wiki/JavaScript).
 
