@@ -24,6 +24,8 @@ See below for the smart contract addresses of the [ArchID](https://archid.app) R
 **Registry:** [archway1275jwjpktae4y4y0cdq274a2m0jnpekhttnfuljm6n59wnpyd62qppqxq0](https://www.mintscan.io/archway/wasm/contract/archway1275jwjpktae4y4y0cdq274a2m0jnpekhttnfuljm6n59wnpyd62qppqxq0)
 
 **Cw721:** [archway1cf5rq0amcl5m2flqrtl4gw2mdl3zdec9vlp5hfa9hgxlwnmrlazsdycu4l](https://www.mintscan.io/archway/wasm/contract/archway1cf5rq0amcl5m2flqrtl4gw2mdl3zdec9vlp5hfa9hgxlwnmrlazsdycu4l)
+
+**Marketplace** [archway1qcejwf6rpgn2xgryyce4x536q4lrue7k2rdxzx8h9jazm44gqf9s5vrsva](https://www.mintscan.io/archway/wasm/contract/archway1qcejwf6rpgn2xgryyce4x536q4lrue7k2rdxzx8h9jazm44gqf9s5vrsva)
 :::
 
 :::note Testnet
@@ -32,6 +34,8 @@ See below for the smart contract addresses of the [ArchID](https://archid.app) R
 **Registry:** [archway1lr8rstt40s697hqpedv2nvt27f4cuccqwvly9gnvuszxmcevrlns60xw4r](https://testnet.mintscan.io/archway-testnet/wasm/contract/archway1lr8rstt40s697hqpedv2nvt27f4cuccqwvly9gnvuszxmcevrlns60xw4r)
 
 **Cw721:** [archway146htsfvftmq8fl26977w9xgdwmsptr2quuf7yyra4j0gttx32z3secq008](https://testnet.mintscan.io/archway-testnet/wasm/contract/archway146htsfvftmq8fl26977w9xgdwmsptr2quuf7yyra4j0gttx32z3secq008)
+
+**Marketplace** [archway1mmm7d4w6dxpjcjp0y3lmvmjq0vtf9y0w7w8jnffgkvqge9v5vzvqe8me0n](https://testnet.mintscan.io/archway-testnet/wasm/contract/archway1mmm7d4w6dxpjcjp0y3lmvmjq0vtf9y0w7w8jnffgkvqge9v5vzvqe8me0n)
 :::
 
 
@@ -76,7 +80,6 @@ async function getAccounts() {
   return accounts;
 }
 ```
-
 
 ## Compatibility
 
